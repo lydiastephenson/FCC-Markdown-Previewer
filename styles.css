@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    background-color: #8D99AE;
+}
+
+.container > div {
+    width: 50%;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.refresh {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.refresh i {
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.refresh i:hover, #preview a {
+    color: #EF233C;
+}
+
+.fresh i:visited, #preview a:visited {
+    color: #D80032;
+}
+
+.label {
+    padding: 0.5rem;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+
+#preview, #editor {
+    height: 100%;
+    border: none;
+    border: 2px solid #2B2D42;
+    padding: 1.75rem;
+    overflow: scroll;
+    color: #2B2D42;
+    background-color: #EDF2F4;
+}
+
+#editor {
+    outline: none;
+}
+
+#preview > * {
+    padding: 0.5rem 0;
+}
+
+#preview img {
+    max-width: 100%;
+}
+
+#preview ul {
+    padding-left: 1rem;
+}
+
+#preview blockquote {
+    border-left: 5px solid #D80032;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#preview code, #editor {
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        max-height: 100vh;
+        padding: 1rem 0;
+    }
+
+    .container > div {
+        width: 100%;
+        height: 50%;
+    }
+}

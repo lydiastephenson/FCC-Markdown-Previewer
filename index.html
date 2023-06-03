@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="label">
+                <h2>Preview</h2>
+            </div>
+            <div id="preview"></div>
+        </div>
+        <div>
+            <div class="label refresh">
+                <h2>Editor</h2>
+                <i id="refresh-btn" class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <textarea id="editor" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bfb814df9c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.0.2/marked.min.js" integrity="sha512-pR2pRxcTyeDj6VIOCyr++qKaMVGOlr4uI3XK7jdsLJipnyts+Bo9jtEaL0p+iVcG5pCx84f045DAZH5OrHM9Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
